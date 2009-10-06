@@ -76,5 +76,6 @@ URxvt*colorUL: yellow
 URxvt*font: -*-terminus-*-*-*-*-*-*-*-*-*-*-*-*
 URxvt.keysym.M-c: perl:macosx-clipboard:copy
 URxvt.keysym.M-v: perl:macosx-clipboard:paste
+URxvt.modifier: mod1
 URxvt.perl-ext-common: macosx-clipboard
 URxvt.scrollBar: false
