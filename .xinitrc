@@ -1,4 +1,6 @@
 #!/bin/sh
+source $HOME/.profile
+
 if [ -f $HOME/.xresources ]; then
   xrdb -merge $HOME/.xresources
 fi
