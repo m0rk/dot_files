@@ -1,0 +1,8 @@
+! clear control
+clear mod1
+clear mod2
+! add control = Control_L
+add mod1 = Meta_L
+add mod2 = Meta_R
+! keycode 63 = Control_L
+! keycode 67 = Control_L
