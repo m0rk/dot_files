@@ -1,13 +1,6 @@
 !!! UXTerm
 
-UXTerm*background: #212021
 UXTerm*color0: #000000
-UXTerm*color10: #c5f779
-UXTerm*color11: #fff796
-UXTerm*color12: #4186be
-UXTerm*color13: #cf9ebe
-UXTerm*color14: #71bebe
-UXTerm*color15: #ffffff
 UXTerm*color1: #ffa2a5
 UXTerm*color2: #bdb66b
 UXTerm*color3: #f7e78c
@@ -17,6 +10,14 @@ UXTerm*color6: #87ff87
 UXTerm*color7: #bebebe
 UXTerm*color8: #666666
 UXTerm*color9: #cf6171
+UXTerm*color10: #c5f779
+UXTerm*color11: #fff796
+UXTerm*color12: #4186be
+UXTerm*color13: #cf9ebe
+UXTerm*color14: #71bebe
+UXTerm*color15: #ffffff
+UXTerm*foreground: White
+UXTerm*background: #212021
 UXTerm*colorBD: lightyellow
 UXTerm*colorMode: on
 UXTerm*colorUL: yellow
@@ -24,7 +25,6 @@ UXTerm*colorULMode: on
 UXTerm*customization: -color
 UXTerm*dynamicColors: off
 UXTerm*font: -*-terminus-*-*-*-*-*-*-*-*-*-*-*-*
-UXTerm*foreground: White
 UXTerm*highlightSelection: true
 UXTerm*scrollBar: false
 UXTerm*underLine: on
@@ -35,31 +35,46 @@ Mod1 <Key> V: insert-selection(PRIMARY, CLIPBOARD) \n\
 
 !!! URxvt (weapon of choice)
 
-URxvt*background: #212021
-URxvt*boldFont: xft:terminus:style:Bold:pixelsize=12
+! black (Black)
 URxvt*color0: #000000
-URxvt*color10: #c5f779
-URxvt*color11: #fff796
-URxvt*color12: #4186be
-URxvt*color13: #cf9ebe
-URxvt*color14: #71bebe
-URxvt*color15: #ffffff
+! red (Red3)
 URxvt*color1: #ffa2a5
+! green (Green3)
 URxvt*color2: #bdb66b
+! yellow (Yellow3)
 URxvt*color3: #f7e78c
+! blue (Blue3)
 URxvt*color4: #84cfef
+! magenta (Magenta3)
 URxvt*color5: #ce5d5a
+! cyan (Cyan3)
 URxvt*color6: #87ff87
+! white (AntiqueWhite)
 URxvt*color7: #bebebe
+! bright black (Grey25)
 URxvt*color8: #666666
+! bright red (Red)
 URxvt*color9: #cf6171
-URxvt*font: xft:terminus:pixelsize=12
+! bright green (Green)
+URxvt*color10: #c5f779
+! bright yellow (Yellow)
+URxvt*color11: #fff796
+! bright blue (Blue)
+URxvt*color12: #4186be
+! bright magenta (Magenta)
+URxvt*color13: #cf9ebe
+! bright cyan (Cyan)
+URxvt*color14: #71bebe
+! bright white (White)
+URxvt*color15: #ffffff
+! (White)
 URxvt*foreground: White
-URxvt.cutchars: `"'()*,;<>[]{|}'"
+! (Black)
+URxvt*background: #212021
+URxvt*colorBD: lightyellow
+URxvt*colorUL: yellow
+URxvt*font: -*-terminus-*-*-*-*-*-*-*-*-*-*-*-*
 URxvt.keysym.M-c: perl:macosx-clipboard:copy
 URxvt.keysym.M-v: perl:macosx-clipboard:paste
-URxvt.meta8: true
-URxvt.modifier:  mod1
 URxvt.perl-ext-common: macosx-clipboard
-URxvt.reverseVideo:  false
 URxvt.scrollBar: false
