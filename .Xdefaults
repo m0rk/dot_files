@@ -1,11 +1,5 @@
 !!! UXTerm
 
-!UXTerm*faceName: Monaco
-!UXTerm*faceSize: 10
-!UXTerm.boldFont: -misc-fixed-medium-r-normal--13-120-75-75-c-70-*
-!UXTerm.boldItalicFont: -misc-fixed-medium-r-normal--13-120-75-75-c-70-*
-!UXTerm.font: -misc-fixed-medium-r-normal--13-120-75-75-c-70-*
-!UXTerm.italicFont: -misc-fixed-medium-r-normal--13-120-75-75-c-70-*
 UXTerm*background: #212021
 UXTerm*color0: #000000
 UXTerm*color10: #c5f779
@@ -36,35 +30,11 @@ UXTerm*scrollBar: false
 UXTerm*underLine: on
 
 UXTerm*.Translations: #override \
-!Mod1 <Key> C: select-cursor-start() \ select-cursor-end(PRIMARY, CUT_BUFFER0) \n\
-!Mod1 <Key> V: insert-selection(PRIMARY, CUT_BUFFER0) \n\
 Mod1 <Key> C: select-end(PRIMARY, CLIPBOARD) \n\
 Mod1 <Key> V: insert-selection(PRIMARY, CLIPBOARD) \n\
 
-! XTerm*VT100.Translations: #override \
-! <KeyPress> Prior: scroll-back(1,page) \n\
-! <KeyPress> Next: scroll-forw(1,page) \n\
-! Meta <KeyPress> W: quit() \n\
-! Meta <KeyPress> V: insert-selection(CLIPBOARD,PRIMARY,CUT_BUFFER0) \n\
-! <BtnUp>: select-end(CLIPBOARD,PRIMARY,CUT_BUFFER0) \n\
-
-! *VT100.translations: #override\
-! <Key>Prior: scroll-back(1,pages) \n\
-! <Key>Next: scroll-forw(1,pages)\n\
-! Meta <Key> K: send-signal(int) clear-saved-lines() \n\
-! Meta <Key> P: print() \n\
-! Meta <Key> minus: smaller-vt-font() \n\
-! Meta <Key> KP_Subtract: smaller-vt-font() \n\
-! Meta <Key> plus: larger-vt-font() \n\
-! Meta <Key> KP_Add: larger-vt-font() \n\
-! Meta <Key> C: select-cursor-start() \ select-cursor-end(PRIMARY, CUT_BUFFER0) \n\
-! Meta <Key> V: insert-selection(PRIMARY, CUT_BUFFER0) \n\
-! Meta <Key> M: iconify() \n\
-
 !!! URxvt (weapon of choice)
 
-!URxvt.cursorColor:   white
-!URxvt.perl-ext-common: default,matcher
 URxvt*background: #212021
 URxvt*boldFont: xft:terminus:style:Bold:pixelsize=12
 URxvt*color0: #000000
@@ -86,18 +56,10 @@ URxvt*color9: #cf6171
 URxvt*font: xft:terminus:pixelsize=12
 URxvt*foreground: White
 URxvt.cutchars: `"'()*,;<>[]{|}'"
-URxvt.keysym.M-C: perl:mark-and-yank:activate_mark_mode
 URxvt.keysym.M-c: perl:macosx-clipboard:copy
-URxvt.keysym.M-u: perl:mark-and-yank:activate_mark_url_mode
 URxvt.keysym.M-v: perl:macosx-clipboard:paste
-URxvt.matcher.button: 2
-URxvt.matcher.pattern.1: \\bwww\\.[\\w-]\\.[\\w./?&@#-]*[\\w/-]
-URxvt.matcher.rend.0: fg8
 URxvt.meta8: true
 URxvt.modifier:  mod1
 URxvt.perl-ext-common: macosx-clipboard
-URxvt.perl-ext: mark-and-yank,macosx-clipboard,matcher
-URxvt.perl-lib: /Users/timebomb/.urxvt/
 URxvt.reverseVideo:  false
 URxvt.scrollBar: false
-URxvt.urlLauncher: open
